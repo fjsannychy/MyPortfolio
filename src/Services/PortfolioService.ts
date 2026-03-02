@@ -8,7 +8,7 @@ const GetBasicInfo = async () => {
     fullName: "Fatema Jannat Chowdhury Sanny",
     title: "BSC in CSE ",
     session: "2023-2026",
-    profileImageUrl: "../src/assets/profileimg.jpg",
+    profileImageUrl: "https://lh3.googleusercontent.com/d/1GnzYPgSnQHTct1EUpLDMYVgq2-zcnov0",
     institute: "Metropolitan University, Sylhet",
     description: "Aspiring Software Developer focused on backend and full-stack development.",
     aboutMe: "I am an undergraduate Full Stack Developer with hands-on experience in building secure, database-driven web applications. I specialize in ASP.NET Core, REST API development, and frontend integration using modern web technologies. I focus on writing clean, maintainable code and designing structured backend systems. I am continuously improving my skills by building real-world projects and exploring scalable application architecture..",
