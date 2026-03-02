@@ -9,44 +9,54 @@ export const Skills = ({ skills }: Params) => {
 
 
     return (
-        <div className="container" id="Skills" >
-            <div className="row mt-2" >
-                <div className="col-md-2" ></div>
-                <div className="col-md-10" >
-                    <h2 className="text-bold mt-2"><i className="bi bi-star-fill"></i> Skills</h2>
-                    {skills.map((item: SkillGroup) => (
-                        <div className='container'>
-                            <h4 className="text-bold mt-4"><i className={item.icon}></i> {item.title}</h4>
-                            {item.skills.map((skill: Skill, i: number) => (
-                                <div className='row'>
-                                    <div className='p-2 mt-2 col-md-10 section'>
-                                        <div className="row mt-2 mb-2" key={i} >
-                                            <div className="col-md-1" >
-                                                <img src={skill.imageUrl} width={70} height={70} />
+       <div className="container mt-5" id="Skills">
+            <div className="row mt-2">
+                <div className="col-md-2"></div>
+                <div className="col-md-10">
+                    <h2 className="text-bold mb-4">
+                        <i className="bi bi-star-fill text-info"></i> Technical Skills
+                    </h2>
+
+                    {skills.map((group: SkillGroup, index: number) => (
+                        <div key={index} className="mb-5">
+                            {/* Skill Group Title (e.g., Soft Skills, Technical Skills) */}
+                            <h4 className="text-bold mt-4 mb-3">
+                                <i className={group.icon + " me-2"}></i> {group.title}
+                            </h4>
+
+                            {/* Grid container: Using col-lg-3 makes cards smaller like the Version Control section */}
+                            <div className="row g-3">
+                                {group.skills.map((skill: Skill, i: number) => (
+                                    <div className="col-lg-3 col-md-4 col-sm-6" key={i}>
+                                        {/* Using your 'section' class to match theme perfectly */}
+                                        <div className="section p-3 h-100 d-flex flex-column justify-content-between skill-item">
+                                            <div className="text-center mb-2">
+                                                <img 
+                                                    src={skill.imageUrl} 
+                                                    alt={skill.title} 
+                                                    style={{ width: '45px', height: '45px', objectFit: 'contain' }}
+                                                    className="mb-2" 
+                                                />
+                                                <div>
+                                                    <h6 className="text-bold text-white mb-0" style={{ fontSize: '13px' }}>
+                                                        {skill.title}
+                                                    </h6>
+                                                    <p className="text-info mb-0" style={{ fontSize: '9px' }}>
+                                                        {skill.exp ? `EXP: ${skill.exp} YRS` : skill.level}
+                                                    </p>
+                                                </div>
                                             </div>
-                                            <div className="col-md-11" >
-                                                <h4 className="text-bold" >
-                                                    {skill.title}
-                                                </h4>
-                                                <p className="text-bold mt-0 fs-12" >
-                                                    {skill.exp ? skill.exp == 1 ? "EXP: 1 YR" : "EXP: " + skill.exp + " YRS" : ""}
-                                                </p>
-                                                <p className="text-bold mt-0 fs-11" >
-                                                    {skill?.level ? "Expertise: " + skill?.level : ""}
-                                                </p>
-                                            </div>
-                                            <div className="col-md-12" >
-                                                <p className="text-bold mt-0 fs-11" >
-                                                    {skill?.description}
-                                                </p>
-                                            </div>
+                                            <p className="primary-text mt-1 mb-0 text-center" style={{ fontSize: '10px', lineHeight: '1.2' }}>
+                                                {skill.description}
+                                            </p>
                                         </div>
                                     </div>
-                                </div>
-                            ))}
+                                ))}
+                            </div>
                         </div>
                     ))}
                 </div>
             </div>
-        </div>);
+        </div>
+    );
 }

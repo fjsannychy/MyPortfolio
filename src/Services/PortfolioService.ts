@@ -22,44 +22,90 @@ const GetBasicInfo = async () => {
 }
 
 const GetSkills = async () => {
-  
   const skills: SkillGroup[] = [
     {
       icon: "bi bi-code-slash",
-      title: "Technical Skills",
+      title: "Backend & Database",
       skills: [
-            {
-              title: "ASP Dotnet Core Web API",
-              description: "I have developed on more api projects with asp.net core web api.",
-              exp: 1,
-              imageUrl: "https://www.openfaas.com/images/2019-asp-net-core/netcore.png"
-            },
-            {
-              title: "MSSQL Server",
-              description: "I have developed on more projects with MSSQL Server database.",
-              exp: 1,
-              imageUrl: "https://5.imimg.com/data5/BC/WT/WX/GLADMIN-13634783/selection-227-500x500.png"
-            }
+        {
+          title: "ASP.NET Core Web API",
+          description: "Proficient in developing RESTful APIs, implementing middleware, and backend architecture.",
+          exp: 1,
+          imageUrl: "https://www.openfaas.com/images/2019-asp-net-core/netcore.png"
+        },
+       {
+          title: "MSSQL & MySQL",
+          description: "Experience in database design, T-SQL, and managing relational data using both MSSQL Server and MySQL.",
+          exp: 1,
+          // Using a combined or neutral SQL icon often looks best here
+          imageUrl: "https://5.imimg.com/data5/BC/WT/WX/GLADMIN-13634783/selection-227-500x500.png" 
+        }
       ]
     },
     {
+      icon: "bi bi-layers",
+      title: "Frontend Development",
+      skills: [
+        {
+          title: "React",
+          description: "Building dynamic User Interfaces using Functional Components, Hooks, and TypeScript.",
+          exp: 1,
+          imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+        },
+        {
+          title: "HTML, CSS & JS",
+          description: "Core web technologies for building responsive, accessible, and interactive websites.",
+          exp: 2,
+          imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+        }
+      ]
+    },
+    {
+      icon: "bi bi-git",
+      title: "Version Control",
+      skills: [
+        {
+          title: "Git & GitHub",
+          description: "Managing code versions and collaborating on projects using Git commands and GitHub actions.",
+          exp: 2,
+          imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+        }
+      ]
+    },
+  
+   {
       icon: "bi bi-award",
       title: "Soft Skills",
       skills: [
-            {
-              title: "Problem Solving",
-              description: "I have solved 300+ problems in Beecrowd and Codeshef",
-              exp: 0,
-              level: "Expert",
-              imageUrl: "https://cdn-media-1.freecodecamp.org/images/1*HTRqXgr7CVtRBsyTxurQew.jpeg"
-            },
-            {
-              title: "Communication",
-              description: "I have string verbal and writing skill in English.",
-              exp: 0,
-              level: "Fluent",
-              imageUrl: "https://centrepointschools.com/blogs/wp-content/uploads/2024/08/communication-skills.png"
-            }
+       
+        {
+          title: "Problem Solving",
+          description: "Solved 300+ programming challenges on Beecrowd and CodeChef with optimized logic.",
+          exp: 0,
+          level: "Expert",
+          imageUrl: "https://cdn-media-1.freecodecamp.org/images/1*HTRqXgr7CVtRBsyTxurQew.jpeg"
+        },
+        {
+          title: "Communication",
+          description: "Strong verbal and written skills in English, facilitating clear technical documentation.",
+          exp: 0,
+          level: "Fluent",
+          imageUrl: "https://centrepointschools.com/blogs/wp-content/uploads/2024/08/communication-skills.png"
+        },
+        {
+          title: "Time Management",
+          description: "Effectively balancing academic studies with complex full-stack project development.",
+          exp: 0,
+          level: "Organized",
+          imageUrl: "https://cdn-icons-png.flaticon.com/512/2972/2972531.png"
+        },
+        {
+          title: "Adaptability & Teamwork",
+          description: "Thriving in fast-paced environments and collaborating effectively in group settings.",
+          exp: 0,
+          level: "Collaborative",
+          imageUrl: "https://cdn-icons-png.flaticon.com/512/1256/1256650.png"
+        }
       ]
     }
   ];
@@ -125,7 +171,7 @@ const GetProjects = async () => {
       title: "Portfolio Website",
       description:"A React-based portfolio with TypeScript and Bootstrap.",
       technologies: ["React", "Bootstrap", "TypeScript"],
-      githubLink: "https://github.com/fjsannychy/react-portfolio"
+      githubLink: "https://github.com/fjsannychy/MyPortfolio.git"
     }
   ];
 
