@@ -1,0 +1,23 @@
+.primary-color {
+    background-color: rgb(10, 24, 46);
+}
+
+.primary-text {
+    color: #CAD7F3
+}
+
+.profile-image {
+    width: 300px;
+    border-radius: 150px;
+
+}
+
+.section {
+    border: 1px solid #CAD7F3;
+    border-radius: 3px;
+}
+
+.social-icon {
+    font-size: 40px;
+    margin-left: 10px;
+}
