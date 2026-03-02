@@ -24,15 +24,13 @@ export const Contact = ({ basicInfo }: Params) => {
                                 </div>
                                 <div className="col-md-5 text-center">
 
-                                    <a
-                                        href={`https://mail.google.com/mail/?view=cm&fs=1&to=${basicInfo?.email}&su=Contact+from+Portfolio`}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                        className="btn btn-info w-50 py-3 text-bold shadow-lg"
+                                   <a 
+                                        href={`mailto:${basicInfo?.email}?subject=Contact from Portfolio&body=Hi Fatema,`} 
+                                        className="btn btn-info w-100 py-3 text-bold shadow-lg"
                                         style={{ borderRadius: '15px' }}
                                     >
                                         <i className="bi bi-send-fill me-2"></i>
-                                        Email Me
+                                        Email Me 
                                     </a>
                                 </div>
                             </div>
