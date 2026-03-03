@@ -7,6 +7,7 @@ import type { Experience } from './Model/Experience';
 import type { Project } from './Model/Project';
 import type { Education } from './Model/Education';
 import { AppBar } from './Components/Layouts/AppBar';
+import { Footer } from './Components/Layouts/Footer';
 import { Home } from './Components/Molecoles/Home';
 import { About } from './Components/Molecoles/About';
 import { Skills } from './Components/Molecoles/Skills';
@@ -50,7 +51,7 @@ function App() {
   return (
     <>
       <AppBar />
-      <div className="container p-2 primary-text" >
+      <div className="container p-2 primary-text">
         <Home basicInfo={basicInfo} />
         <About basicInfo={basicInfo} />
         <Skills skills={skills} />
@@ -58,9 +59,11 @@ function App() {
         <Projects projects={projects} />
         <Educations educations={educations} />
         <Contact basicInfo={basicInfo} />
+        
+        {/* Footer is placed inside the container but after the last section */}
+        <Footer />
       </div>
     </>
   );
 }
-
 export default App
