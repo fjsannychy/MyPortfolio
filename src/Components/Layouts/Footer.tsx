@@ -11,9 +11,7 @@ export const Footer = () => {
           <p className="mb-1">
             &copy; {currentYear} <span className="text-info text-bold">Fatema Jannat chowdhury Sanny</span>. All Rights Reserved.
           </p>
-          <small className="opacity-50 fs-11">
-            Built with <i className="bi bi-heart-fill text-danger"></i> using React & TypeScript & Bootstrap
-          </small>
+         
         </div>
       </div>
     </footer>
