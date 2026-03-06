@@ -5,7 +5,7 @@ import type { Project } from "../Model/Project";
 import type { Education } from "../Model/Education";
 const GetBasicInfo = async () => {
   return {
-    fullName: "Fatema Jannat Chowdhury Sanny",
+    fullName: "Mst Fatema Jannat Chowdhury Sanny",
     title: "BSC in CSE ",
     session: "2023-2026",
     profileImageUrl: "https://lh3.googleusercontent.com/d/1GnzYPgSnQHTct1EUpLDMYVgq2-zcnov0",
